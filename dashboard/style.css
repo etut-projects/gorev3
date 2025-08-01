@@ -1,0 +1,113 @@
+/*
+#1c2021 background color
+#292d2e card color
+#ffffff text color primary
+#7f8485 text color secondary
+
+*/
+
+/* Global Features */
+
+:root {
+  --primary: #1c2021;
+  --secondary: #292d2e;
+  --text-color: #ffffff;
+  --text-color-secondary: #7f8485;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+/* Project Features */
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 25px;
+  margin: 15px auto;
+}
+
+.operations {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3fr 2fr;
+  gap: 10px;
+}
+
+.operation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+
+.operations span,
+.operations i {
+  font-size: 24px;
+}
+
+.operations i {
+  margin-bottom: 10px;
+}
+
+.companies {
+  width: 100%;
+  height: 200px;
+  margin: 5rem 0;
+}
+
+.company-card {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.company-image {
+  width: 60px;
+  background-color: var(--secondary);
+  grid-row: 1 / 3;
+  border-radius: 50%;
+  margin: 10px 10px 0 0;
+}
+
+.amount,
+.rate {
+  justify-self: end;
+}
+
+.date,
+.rate {
+  color: var(--text-color-secondary);
+}
+
+@media (max-width: 500px) {
+  .operations {
+    grid-template-columns: 1fr;
+  }
+
+  .operation-card {
+    padding: 8px;
+  }
+
+  .companies {
+    margin-top: 6rem;
+  }
+
+  .company-image {
+    width: 50px;
+  }
+}
