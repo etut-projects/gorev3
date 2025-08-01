@@ -1,0 +1,56 @@
+/* Global Features */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d2122;
+  color: #7f8384;
+  font-family: sans-serif;
+}
+
+/* Project Features */
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  height: 450px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate {
+  width: 70%;
+  height: 20%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-weight: 550;
+  font-size: 4rem;
+}
+
+.middle-number {
+  font-size: 5rem;
+  margin: 0 8px;
+  color: white;
+}
+
+.currency {
+  width: 75%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.dollar {
+  color: white;
+}
